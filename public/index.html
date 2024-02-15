@@ -6,20 +6,20 @@
     <link rel="stylesheet" href="/css/styles.min.css" />
   </head>
   <body>
-    <div class="chat">
-      <div class="chat__sidebar"></div>
-      <div class="chat__main">
-        <div id="messages" class="chat__messages"></div>
-
-        <div class="compose">
-          <form id="message-form">
-            <input name="message" placeholder="Message" />
-            <button>Send</button>
-          </form>
-          <button id="send-location">Send location</button>
+     <div class="centered-form">
+            <div class="centered-form__box">
+                <h1>Join</h1>
+                <form action="/chat.html">
+                    <label>Display name</label>
+                    <input type="text" name="username" placeholder="Display name" required>
+                    <label>Room</label>
+                    <input type="text" name="room" placeholder="Room" required>
+                    <button>Join</button>
+                </form>    
+             </div>
         </div>
-      </div>
-    </div>
+
+   
 
     <script id="message-template" type="text/html">
       <div class="message">
